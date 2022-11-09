@@ -1,0 +1,43 @@
+"CREATE TABLE company (
+  company_id serial, 
+  registration_status boolean, 
+  company_name varchar(30), 
+  registration_number integer, 
+  created_date date, 
+  updated_date date, 
+  created_by integer, 
+  updated_by integer
+);
+"
+select * from company;
+
+[200~"INSERT INTO company(
+  registration_status, company_name, 
+  registration_number
+) 
+VALUES 
+  ('yes', 'abu tech', '12345');
+"
+select * from company;
+
+"INSERT INTO company(
+  registration_status, company_name, 
+  registration_number
+) 
+VALUES 
+  (
+    'yes', 'abumaheen technology private limited', 
+    '12345678911111111'
+  );"
+select * from company;
+
+"INSERT INTO company(
+  registration_status, company_name, 
+  registration_number
+) 
+VALUES 
+  (
+    'yes', 'maheenabubacker pvt ltd', 
+    '28298399'
+  );"
+select * from company;
