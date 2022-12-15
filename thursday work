@@ -1,0 +1,54 @@
+print("enter 1st semester subject marks")
+a=str(input("please enter the student name:"))
+b=int(input("please enter the it1 mark:"))
+c=int(input("please enter the it2 mark:"))
+d=int(input("please enter the it3 mark:"))
+e=int(input("please enter the it4 mark:"))
+f=int(input("please enter the it5 mark:"))
+g=int(input("please enter the it6 mark:"))
+h=int(input("please enter the it7 mark:"))
+i=int(input("please enter the it8 mark:"))
+total=(b+c+d+e+f+g+h+i)
+print(a,"have scored",total)
+f=total/8
+print("Average",f)
+if b>=35 and c>=35 and d>=35 and e>=35 and f>=35 and g>=35 and h>=35 and i>=35:
+    print("Result:PASS")
+    if f>=80:
+        print(a,"has scored grade A")
+    elif f>=60 and f<=80:
+        print(a,"have scored grade B")
+    else :
+        print(a,"have scored grade C")
+else:
+    print("Result:fail")
+
+
+print("enter 2nd semester subject marks")
+b1=int(input("please enter the st1 mark:"))
+c1=int(input("please enter the st2 mark:"))
+d1=int(input("please enter the st3 mark:"))
+e1=int(input("please enter the st4 mark:"))
+f1=int(input("please enter the st5 mark:"))
+g1=int(input("please enter the st6 mark:"))
+h1=int(input("please enter the st7 mark:"))
+i1=int(input("please enter the st8 mark:"))
+total1=(b1+c1+d1+e1+f1+g1+h1+i1)
+print(a,"have scored",total)
+f1=total1/8
+print("Average",f)
+if b1>=35 and c1>=35 and d1>=35 and e1>=35 and f1>=35 and f1>=35 and g1>=35 and h1>=35 and i1>=35:
+    print("Result:PASS")
+    if f1>=80:
+        print(a,"has scored grade A")
+    elif f1>=60 and f1<=80:
+        print(a,"have scored grade B")
+    else :
+        print(a,"have scored grade C")
+else:
+    print("Result:fail")
+
+
+overall_avr=f+f1
+p1=overall_avr/2
+print("over all CGPA",p1)
